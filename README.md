@@ -1,5 +1,7 @@
 # Issue
-When using a custom arg to match input based on my own values, logging the error produces the following input. 
+When using a custom arg to match input based on my own values, logging the error produces the following output.
+
+This has been generatd from `Test.ts:18`
 
 ```
 ResultError: Unwrap failed

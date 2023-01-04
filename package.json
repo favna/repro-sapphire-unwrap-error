@@ -1,23 +1,29 @@
 {
-  "name": "sapphire-unwrap-error",
-  "version": "1.0.0",
-  "description": "Standalone repo for reproducing the sapphire/discord.js issue for ResultError: Unwrap Failed when attempting to use custom args.",
-  "main": "dist/Bot.js",
-  "scripts": {
-    "dev": "tsc-watch --onSuccess \"node --enable-source-maps ./dist/Bot.js\" "
-  },
-  "author": "Bejasc",
-  "license": "ISC",
-  "dependencies": {
-    "@discordjs/builders": "^0.15.0",
-    "@sapphire/decorators": "^4.3.1",
-    "@sapphire/framework": "^3.1.4",
-    "@sapphire/ts-config": "^3.3.2",
-    "discord.js": "^13.8.0",
-    "tsc-watch": "^6.0.0"
-  },
-  "engines": {
-    "node": ">=16.6.0",
-    "npm": ">=7.0.0"
-  }
+    "name": "sapphire-unwrap-error",
+    "version": "1.0.0",
+    "description": "Standalone repo for reproducing the sapphire/discord.js issue for ResultError: Unwrap Failed when attempting to use custom args.",
+    "main": "dist/Bot.js",
+    "scripts": {
+        "start": "node --enable-source-maps ./dist/Bot.js",
+        "dev": "tsc-watch --onSuccess \"node --enable-source-maps ./dist/Bot.js\" ",
+        "watch": "tsc-watch"
+    },
+    "author": "Bejasc",
+    "license": "ISC",
+    "dependencies": {
+        "@discordjs/builders": "^0.15.0",
+        "@sapphire/decorators": "^4.3.1",
+        "@sapphire/framework": "^3.1.4",
+        "discord.js": "^13.8.0"
+    },
+    "engines": {
+        "node": ">=16.6.0",
+        "npm": ">=7.0.0"
+    },
+    "devDependencies": {
+        "@sapphire/prettier-config": "^1.4.4",
+        "@sapphire/ts-config": "^3.3.4",
+        "prettier": "^2.8.1",
+        "tsc-watch": "^6.0.0"
+    }
 }
